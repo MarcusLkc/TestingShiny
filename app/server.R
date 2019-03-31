@@ -195,5 +195,6 @@ server <- function(input, output, session) {
 
 }
 
+port <- Sys.getenv("PORT")
 # Create Shiny app object
-shinyApp(ui = ui, server = server, options=list(host="0.0.0.0", port=8080))
+shinyApp(ui = ui, server = server, options=list(host="0.0.0.0", port=port))
